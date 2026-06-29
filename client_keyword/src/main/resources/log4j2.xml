@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="INFO">
+  <appenders>
+    <Console name="console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+    <RollingFile name="appFile" fileName="logs/app.log"
+                 filePattern="logs/app.log">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} %L - %msg%xEx%n"/>
+      <SizeBasedTriggeringPolicy size="10 MB" />
+      <DefaultRolloverStrategy max="5"/>
+    </RollingFile>
+  </appenders>
+  <loggers>
+    <root level="INFO">
+      <appender-ref ref="console"/>
+      <appender-ref ref="appFile"/>
+    </root>
+    <logger name="org.hibernate" level="warn" />
+<!--    <logger name="org.hibernate.SQL" level="debug" />-->
+    <logger name="org.mabb.fontverter.opentype.TtfInstructions.TtfInstructionParser" level="error" />
+    <logger name="org.fit.pdfdom.PathDrawer" level="error" />
+    <logger name="org.fit.pdfdom.PathDrawer" level="error" />
+  </loggers>
+</configuration>
