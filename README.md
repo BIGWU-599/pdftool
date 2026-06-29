@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PDF Tool - 智能PDF处理工具
 
 [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://openjdk.java.net/)
@@ -226,3 +227,22 @@ mvn test
 ---
 
 ⭐ 如果这个项目对您有帮助，请给个Star！
+=======
+这是一个 PDF 智能解析系统,核心功能包括:
+1. PDF 表格识别与数据提取
+自动识别 PDF 中的表格结构
+从招股说明书中提取财务数据、专利信息、竞争对手信息等 40+ 种关键字段
+支持文本、图片、线条等多种 PDF 元素的解析
+2. 关键词匹配与信息定位
+使用中文分词(JCSeg)进行智能文本分析
+通过规则引擎匹配特定业务字段(如信用代码、专利号、财务指标等)
+高亮显示提取结果在原文中的位置
+3. HTML 可视化展示
+将 PDF 转换为带标注的 HTML 页面
+使用 Thymeleaf 模板引擎生成结构化报告
+支持原文对照和数据溯源
+4. 桌面客户端应用
+提供 Swing 图形界面
+文件树管理、拖拽操作
+集成 JCEF(Java Chromium Embedded Framework) 浏览器组件
+>>>>>>> f4011487125e24285b833d3d28fba6b8c64c7e95
