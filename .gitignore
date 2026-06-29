@@ -3,6 +3,29 @@
 *.iml
 *.iws
 *.ipr
+out/
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist
+/nbdist
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# VS Code
+.vscode/
 
 # Maven
 target/
@@ -14,22 +37,63 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle
+gradlew
+gradlew.bat
+gradle-app.setting
+!gradle-wrapper.jar
+!.gradle/wrapper/gradle-wrapper.jar
 
 # Logs
 logs/
 *.log
+log/
 debug.log
+hs_err_pid*.log
 
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Compiled files
 *.class
 *.jar
 *.war
 *.ear
+*.zip
+*.tar.gz
+*.rar
 
 # Runtime files
 Web Data
 Web Data-journal
+
+# PDF Tool specific
+data/thymeleaf/*.html
+doc/*.pdf
+doc/*.html
+jcef-bundle/
+client/libs/*.jar
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+.nfs*
+
+# Java doc build directory
+doc/javadoc/
+
+# Package Files
+*.rpm
+*.deb
+*.dmg
+*.pkg
+
+# Virtual machine crash logs
+hs_err_pid*.log
